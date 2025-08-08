@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Code, Server, Brain } from 'lucide-react';
+import { ArrowRight, Code, Server, Brain, FileText } from 'lucide-react';
 import { Button, Section } from '../components/ui';
+import ResumeRequestModal from '../components/ResumeRequestModal';
 
 const Home: React.FC = () => {
+  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
+
   const metrics = [
     { label: 'Years Experience', value: '9+', description: '2016 - Present' },
     { label: 'Lines of Code', value: '322K+', description: 'Production Ready' },
@@ -39,11 +42,13 @@ const Home: React.FC = () => {
                 Get In Touch
               </Button>
             </Link>
-            <a href="/resume.pdf" download>
-              <Button variant="text">
-                Download Resume
-              </Button>
-            </a>
+            <Button 
+              variant="text" 
+              icon={FileText}
+              onClick={() => setIsResumeModalOpen(true)}
+            >
+              Request Resume
+            </Button>
           </div>
 
           {/* Key Metrics */}
@@ -102,6 +107,12 @@ const Home: React.FC = () => {
           </div>
         </div>
       </Section>
+
+      {/* Resume Request Modal */}
+      <ResumeRequestModal 
+        isOpen={isResumeModalOpen}
+        onClose={() => setIsResumeModalOpen(false)}
+      />
     </>
   );
 };
