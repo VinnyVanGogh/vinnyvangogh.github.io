@@ -27,16 +27,31 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, isFreePlan
   // Load Calendly widget script
   useEffect(() => {
     if (selectedOption && !isCalendlyLoaded) {
+      // Check if Calendly is already loaded
+      if (window.Calendly) {
+        setIsCalendlyLoaded(true);
+        return;
+      }
+
+      // Check if script is already in the DOM
+      const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
+      if (existingScript) {
+        setIsCalendlyLoaded(true);
+        return;
+      }
+
       const script = document.createElement('script');
       script.src = 'https://assets.calendly.com/assets/external/widget.js';
       script.async = true;
       script.onload = () => setIsCalendlyLoaded(true);
+      script.onerror = () => {
+        console.error('Failed to load Calendly script');
+        setIsCalendlyLoaded(true); // Set to true to show fallback
+      };
       document.head.appendChild(script);
 
       return () => {
-        if (document.head.contains(script)) {
-          document.head.removeChild(script);
-        }
+        // Don't remove script on unmount as it might be used elsewhere
       };
     }
   }, [selectedOption, isCalendlyLoaded]);
@@ -44,12 +59,37 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, isFreePlan
   // Initialize Calendly widget when script is loaded
   useEffect(() => {
     if (selectedOption && isCalendlyLoaded && window.Calendly) {
-      window.Calendly.initInlineWidget({
-        url: selectedOption.calendlyUrl,
-        parentElement: document.getElementById('calendly-inline-widget'),
-        prefill: {},
-        utm: {}
-      });
+      const container = document.getElementById('calendly-inline-widget');
+      if (container) {
+        // Clear any existing content
+        container.innerHTML = '';
+        
+        // Small delay to ensure container is ready
+        setTimeout(() => {
+          try {
+            // Initialize widget with proper configuration
+            window.Calendly.initInlineWidget({
+              url: selectedOption.calendlyUrl,
+              parentElement: container,
+              prefill: {},
+              utm: {}
+            });
+          } catch (error) {
+            console.error('Failed to initialize Calendly widget:', error);
+            // Show fallback
+            container.innerHTML = `
+              <div class="flex items-center justify-center h-full">
+                <div class="text-center p-8">
+                  <p class="text-gray-600 mb-4">Unable to load booking calendar</p>
+                  <a href="${selectedOption.calendlyUrl}" target="_blank" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                    Book on Calendly →
+                  </a>
+                </div>
+              </div>
+            `;
+          }
+        }, 100);
+      }
     }
   }, [selectedOption, isCalendlyLoaded]);
 
@@ -201,16 +241,29 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, isFreePlan
       {/* Calendly Widget Container */}
       <div 
         id="calendly-inline-widget" 
-        className="min-h-[600px] w-full"
+        className="w-full h-[600px] bg-white rounded-lg overflow-hidden relative"
+        style={{ minHeight: '600px', maxHeight: '600px' }}
       >
-        {!isCalendlyLoaded && (
-          <div className="flex items-center justify-center h-96">
+        {!isCalendlyLoaded ? (
+          <div className="flex items-center justify-center h-full">
             <div className="text-center">
               <div className="animate-spin w-8 h-8 border-2 border-champagne border-t-transparent rounded-full mx-auto mb-4"></div>
               <p className="text-metallic-silver/80">Loading booking calendar...</p>
             </div>
           </div>
-        )}
+        ) : (!window.Calendly && (
+          <div className="flex items-center justify-center h-full">
+            <div className="text-center p-8">
+              <p className="text-metallic-silver mb-4">Unable to load booking calendar</p>
+              <Button
+                variant="primary"
+                onClick={() => window.open(selectedOption.calendlyUrl, '_blank')}
+              >
+                Book on Calendly →
+              </Button>
+            </div>
+          </div>
+        ))}
       </div>
     </Modal>
   );
