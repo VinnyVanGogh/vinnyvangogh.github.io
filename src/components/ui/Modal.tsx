@@ -44,7 +44,7 @@ const Modal: React.FC<ModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Backdrop */}
       <div 
         className="absolute inset-0 bg-black/50 backdrop-blur-sm"
@@ -52,9 +52,9 @@ const Modal: React.FC<ModalProps> = ({
       />
       
       {/* Modal */}
-      <div className={`relative w-full ${sizeClasses[size]} mx-4 bg-onyx-metallic/95 backdrop-blur-md border border-metallic-silver/20 rounded-xl shadow-2xl`}>
+      <div className={`relative w-full ${sizeClasses[size]} max-h-[90vh] bg-onyx-metallic/95 backdrop-blur-md border border-metallic-silver/20 rounded-xl shadow-2xl flex flex-col`}>
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-metallic-silver/10">
+        <div className="flex items-center justify-between p-6 border-b border-metallic-silver/10 flex-shrink-0">
           <h2 className="text-xl font-bold text-champagne">
             {title}
           </h2>
@@ -67,7 +67,7 @@ const Modal: React.FC<ModalProps> = ({
         </div>
         
         {/* Content */}
-        <div className="p-6">
+        <div className="p-6 overflow-y-auto custom-scrollbar flex-1">
           {children}
         </div>
       </div>
