@@ -11,15 +11,8 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: undefined,
-        // Ensure proper file extensions for GitHub Pages
-        entryFileNames: 'assets/[name]-[hash].js',
-        chunkFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]'
       },
     },
-    // Ensure compatibility with GitHub Pages
-    target: 'es2015',
-    minify: 'esbuild'
   },
   server: {
     fs: {
