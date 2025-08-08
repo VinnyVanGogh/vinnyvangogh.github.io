@@ -22,7 +22,7 @@ build
 # Logs
 logs
 *.log
-npm-debug.log*
+bun-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
@@ -39,8 +39,8 @@ coverage
 *.lcov
 .nyc_output
 
-# Optional npm cache directory
-.npm
+# Optional bun cache directory
+.bun
 
 # Optional eslint cache
 .eslintcache
@@ -51,7 +51,7 @@ jspm_packages/
 # Optional REPL history
 .node_repl_history
 
-# Output of 'npm pack'
+# Output of 'bun pack'
 *.tgz
 
 # Yarn Integrity file
@@ -97,8 +97,9 @@ Thumbs.db
 *.sln
 *.sw?
 
-# Bun
+# Bun specific files
 .bun
+bun.lockb
 
 # TypeScript
 *.tsbuildinfo

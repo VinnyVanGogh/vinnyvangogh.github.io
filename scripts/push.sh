@@ -19,6 +19,13 @@ if [ ! -f "package.json" ]; then
     exit 1
 fi
 
+# Check if Bun is installed
+if ! command -v bun &> /dev/null; then
+    echo -e "${RED}❌ Error: Bun is not installed.${NC}"
+    echo "Please install it first: https://bun.sh/"
+    exit 1
+fi
+
 # Add all files
 echo -e "${YELLOW}📁 Adding files...${NC}"
 git add .
