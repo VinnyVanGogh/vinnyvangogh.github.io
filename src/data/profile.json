@@ -1,0 +1,26 @@
+{
+  "name": "Vince Vasile",
+  "title": "Applied AI Engineer & RPA Automation Specialist",
+  "email": "vincevasile@vinny-van-gogh.com",
+  "location": "San Francisco, California",
+  "linkedin": "https://linkedin.com/in/vincevasile",
+  "github": "https://github.com/VinnyVanGogh",
+  "summary": "Senior Applied AI Engineer with almost a decade of experience building production-grade systems. Expert in multi-LLM coordination, enterprise automation, and scalable architectures. Proven track record of delivering complex AI solutions with 99.95% uptime and managing systems processing $50K+ monthly revenue.",
+  "keyMetrics": {
+    "experience": "9+ Years",
+    "experienceDetail": "2016 - Present",
+    "linesOfCode": "322K+",
+    "linesOfCodeDetail": "Production Ready",
+    "uptime": "99.95%",
+    "uptimeDetail": "Enterprise Grade",
+    "aiSessions": "261+",
+    "aiSessionsDetail": "Multi-LLM Expertise"
+  },
+  "highlights": [
+    "Built production AI agent system with 322K+ lines across 1,135 Python files",
+    "Architected enterprise SaaS platform serving 4 integrated applications",
+    "Developed Resume Automation Pipeline processing 50-60 tailored resumes",
+    "Achieved 99.95% uptime across distributed systems",
+    "Led AI-coordinated development across 100+ releases"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "experiences": [
+    {
+      "id": "managed-solution",
+      "company": "Managed Solution",
+      "role": "RPA & Automation Engineer",
+      "duration": "Nov 2024 - Present",
+      "location": "Remote",
+      "current": true,
+      "highlights": [
+        "Architected enterprise-scale multi-tenant SaaS platform with Django 5.2+, React 18+, and Ruby on Rails",
+        "Developed sophisticated Contact Mapper processing 34,223+ lines of Python code",
+        "Built intelligent ticket routing system using NLP classification, processing 1000+ tickets/day",
+        "Implemented Microsoft Azure AD authentication with MSAL integration",
+        "Created advanced automation workflows using Power Automate and Power BI"
+      ],
+      "technologies": ["Python", "Django", "React", "TypeScript", "Ruby on Rails", "FastAPI", "PostgreSQL", "Azure AD", "Docker"]
+    },
+    {
+      "id": "vc3",
+      "company": "VC3",
+      "role": "IT Systems Engineer III - Onboarding Specialist",
+      "duration": "Sep 2023 - Nov 2024",
+      "location": "California, Remote",
+      "current": false,
+      "highlights": [
+        "Enhanced IT infrastructure and streamlined client onboarding with advanced automation",
+        "Developed custom Python, PowerShell, and Bash scripts reducing manual tasks by 75%",
+        "Engineered comprehensive network security protocols integrating Sentinel One and CrowdStrike",
+        "Led network configuration standardization across Cisco, Meraki, and HP platforms",
+        "Achieved 99.8% service availability across enterprise environments"
+      ],
+      "technologies": ["Python", "PowerShell", "Bash", "Sentinel One", "CrowdStrike", "Cisco", "Network Security"]
+    },
+    {
+      "id": "accent",
+      "company": "Accent Computer Solutions, Inc.",
+      "role": "System Administrator II",
+      "duration": "Feb 2022 - Sep 2023",
+      "location": "Rancho Cucamonga, California",
+      "current": false,
+      "highlights": [
+        "Automated network troubleshooting using Python and PowerShell scripting",
+        "Innovated VM management tools for VMware and Hyper-V platforms",
+        "Reduced manual system management tasks by 40% through automation",
+        "Advanced network security posture with custom diagnostic applications"
+      ],
+      "technologies": ["Python", "PowerShell", "VMware", "Hyper-V", "Network Administration"]
+    },
+    {
+      "id": "anthony",
+      "company": "Anthony & Co. Jewelers",
+      "role": "System Administrator",
+      "duration": "Dec 2019 - Dec 2021",
+      "location": "Torrance, California",
+      "current": false,
+      "highlights": [
+        "Architected complete IT infrastructure from ground up as sole IT specialist",
+        "Designed and deployed POS networks and e-commerce website",
+        "Maintained optimal system performance with proactive monitoring",
+        "Implemented scalable solutions supporting business growth"
+      ],
+      "technologies": ["POS Systems", "E-commerce", "Network Infrastructure", "System Optimization"]
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "categories": [
+    {
+      "id": "ai-ml",
+      "name": "AI & Machine Learning",
+      "priority": 1,
+      "skills": [
+        {
+          "name": "LLM Orchestration",
+          "level": "expert",
+          "years": 3,
+          "details": ["Multi-agent systems", "Claude API", "GPT-4", "Prompt engineering"]
+        },
+        {
+          "name": "LangChain",
+          "level": "expert",
+          "years": 2,
+          "details": ["Chain design", "Memory management", "Tool integration"]
+        },
+        {
+          "name": "RAG Systems",
+          "level": "advanced",
+          "years": 2,
+          "details": ["Vector databases", "Semantic search", "Context retrieval"]
+        },
+        {
+          "name": "NLP",
+          "level": "advanced",
+          "years": 4,
+          "details": ["Text classification", "Entity extraction", "Sentiment analysis"]
+        },
+        {
+          "name": "Computer Vision",
+          "level": "intermediate",
+          "years": 2,
+          "details": ["OpenCV", "Image processing", "OCR"]
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "name": "Backend Development",
+      "priority": 2,
+      "skills": [
+        {
+          "name": "Python",
+          "level": "expert",
+          "years": 8,
+          "details": ["FastAPI", "Django", "Async programming", "Type hints"]
+        },
+        {
+          "name": "Node.js",
+          "level": "advanced",
+          "years": 5,
+          "details": ["Express", "NestJS", "TypeScript", "Event-driven architecture"]
+        },
+        {
+          "name": "Ruby on Rails",
+          "level": "advanced",
+          "years": 3,
+          "details": ["RESTful APIs", "ActiveRecord", "Sidekiq"]
+        },
+        {
+          "name": "Databases",
+          "level": "expert",
+          "years": 7,
+          "details": ["PostgreSQL", "MongoDB", "Redis", "Vector DBs"]
+        },
+        {
+          "name": "API Design",
+          "level": "expert",
+          "years": 6,
+          "details": ["REST", "GraphQL", "WebSockets", "gRPC"]
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend Development",
+      "priority": 3,
+      "skills": [
+        {
+          "name": "React",
+          "level": "expert",
+          "years": 6,
+          "details": ["Hooks", "Context API", "Performance optimization", "Next.js"]
+        },
+        {
+          "name": "TypeScript",
+          "level": "expert",
+          "years": 5,
+          "details": ["Strict mode", "Generics", "Type guards", "Decorators"]
+        },
+        {
+          "name": "Modern CSS",
+          "level": "advanced",
+          "years": 7,
+          "details": ["Tailwind CSS", "CSS-in-JS", "Animations", "Responsive design"]
+        },
+        {
+          "name": "State Management",
+          "level": "advanced",
+          "years": 4,
+          "details": ["Redux", "Zustand", "React Query", "MobX"]
+        },
+        {
+          "name": "Build Tools",
+          "level": "advanced",
+          "years": 5,
+          "details": ["Vite", "Webpack", "Bun", "esbuild"]
+        }
+      ]
+    },
+    {
+      "id": "devops",
+      "name": "DevOps & Infrastructure",
+      "priority": 4,
+      "skills": [
+        {
+          "name": "Docker",
+          "level": "expert",
+          "years": 6,
+          "details": ["Multi-stage builds", "Compose", "Optimization", "Security"]
+        },
+        {
+          "name": "Kubernetes",
+          "level": "advanced",
+          "years": 4,
+          "details": ["Helm", "Service mesh", "Auto-scaling", "GitOps"]
+        },
+        {
+          "name": "CI/CD",
+          "level": "expert",
+          "years": 7,
+          "details": ["GitHub Actions", "GitLab CI", "Jenkins", "ArgoCD"]
+        },
+        {
+          "name": "Cloud Platforms",
+          "level": "advanced",
+          "years": 5,
+          "details": ["AWS", "Azure", "GCP", "Terraform"]
+        },
+        {
+          "name": "Monitoring",
+          "level": "advanced",
+          "years": 5,
+          "details": ["Prometheus", "Grafana", "ELK Stack", "OpenTelemetry"]
+        }
+      ]
+    },
+    {
+      "id": "automation",
+      "name": "Automation & Scripting",
+      "priority": 5,
+      "skills": [
+        {
+          "name": "PowerShell",
+          "level": "expert",
+          "years": 8,
+          "details": ["AD automation", "System administration", "Azure integration"]
+        },
+        {
+          "name": "Bash/Shell",
+          "level": "expert",
+          "years": 9,
+          "details": ["Complex scripts", "System automation", "CI/CD pipelines"]
+        },
+        {
+          "name": "RPA",
+          "level": "expert",
+          "years": 4,
+          "details": ["Power Automate", "UiPath", "Custom solutions"]
+        },
+        {
+          "name": "Web Scraping",
+          "level": "advanced",
+          "years": 5,
+          "details": ["Selenium", "Playwright", "Beautiful Soup", "Scrapy"]
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Security & Compliance",
+      "priority": 6,
+      "skills": [
+        {
+          "name": "Authentication",
+          "level": "expert",
+          "years": 6,
+          "details": ["OAuth 2.0", "SAML", "Azure AD", "JWT", "MFA"]
+        },
+        {
+          "name": "Network Security",
+          "level": "advanced",
+          "years": 7,
+          "details": ["Firewalls", "VPN", "Zero Trust", "Penetration testing"]
+        },
+        {
+          "name": "Compliance",
+          "level": "advanced",
+          "years": 5,
+          "details": ["GDPR", "SOC 2", "HIPAA", "PCI DSS"]
+        },
+        {
+          "name": "Security Tools",
+          "level": "advanced",
+          "years": 5,
+          "details": ["CrowdStrike", "Sentinel One", "SIEM", "Vulnerability scanning"]
+        }
+      ]
+    }
+  ],
+  "languages": [
+    "Python",
+    "TypeScript",
+    "JavaScript",
+    "Ruby",
+    "C#",
+    "Go",
+    "Rust",
+    "SQL",
+    "Bash",
+    "PowerShell"
+  ],
+  "certifications": [
+    {
+      "name": "AWS Solutions Architect",
+      "status": "In Progress",
+      "target": "2025"
+    },
+    {
+      "name": "Kubernetes Administrator",
+      "status": "Planned",
+      "target": "2025"
+    }
+  ]
+}

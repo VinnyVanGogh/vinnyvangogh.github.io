@@ -1,0 +1,367 @@
+{
+  "projects": [
+    {
+      "id": "codeagent",
+      "title": "CodeAgent AI Development System",
+      "description": "Production-grade multi-agent AI system with 322K+ lines of Python code across 1,135 files. Orchestrates multiple LLMs for intelligent code generation and system automation.",
+      "category": "AI Infrastructure",
+      "featured": true,
+      "metrics": {
+        "linesOfCode": "322K+",
+        "files": "1,135",
+        "uptime": "99.95%"
+      },
+      "highlights": [
+        "Multi-LLM orchestration with Claude, GPT-4, and specialized models",
+        "Advanced prompt engineering and context management",
+        "Distributed task execution with intelligent routing",
+        "Real-time performance monitoring and optimization"
+      ],
+      "technologies": ["Python", "LangChain", "FastAPI", "Redis", "PostgreSQL", "Docker"],
+      "github": "https://github.com/VinnyVanGogh/codeagent",
+      "status": "production"
+    },
+    {
+      "id": "resume-automation",
+      "title": "Resume Automation Pipeline",
+      "description": "Sophisticated automation system processing 50-60 tailored resumes with dynamic LaTeX compilation and intelligent content matching.",
+      "category": "Automation",
+      "featured": true,
+      "metrics": {
+        "resumes": "50-60/batch",
+        "accuracy": "98.5%",
+        "timeReduction": "85%"
+      },
+      "highlights": [
+        "Intelligent job description parsing with NLP",
+        "Dynamic LaTeX template generation",
+        "Automated skill matching and content optimization",
+        "PDF generation with custom formatting"
+      ],
+      "technologies": ["Python", "LaTeX", "NLP", "Selenium", "Beautiful Soup"],
+      "github": "https://github.com/VinnyVanGogh/resume-automation",
+      "status": "production"
+    },
+    {
+      "id": "managed-solution-dashboard",
+      "title": "Managed Solution Internal Operations Dashboard",
+      "description": "Comprehensive internal platform serving multiple business operations with integrated applications supporting company-wide automation and management.",
+      "category": "Enterprise Platform",
+      "featured": true,
+      "metrics": {
+        "monthlyProcessing": "$50K+",
+        "applications": "4",
+        "availability": "99.8%"
+      },
+      "highlights": [
+        "Multi-application internal operations platform",
+        "Integrated business process automation",
+        "Real-time operational monitoring and analytics",
+        "Centralized company resource management"
+      ],
+      "technologies": ["Django", "React", "PostgreSQL", "Redis", "Internal APIs"],
+      "status": "production"
+    },
+    {
+      "id": "enterprise-saas",
+      "title": "Enterprise Multi-Tenant SaaS Architecture",
+      "description": "Scalable SaaS platform built with Django 5.2+, React 18+, and Ruby on Rails. Processes 1000+ tickets daily with intelligent routing.",
+      "category": "Enterprise",
+      "featured": true,
+      "metrics": {
+        "ticketsPerDay": "1000+",
+        "tenants": "50+",
+        "responseTime": "<200ms"
+      },
+      "highlights": [
+        "Microservices architecture with API gateway",
+        "NLP-powered ticket classification and routing",
+        "Azure AD integration with MSAL authentication",
+        "Real-time metrics and monitoring"
+      ],
+      "technologies": ["Django", "React", "Ruby on Rails", "FastAPI", "Azure AD", "Kubernetes"],
+      "status": "production"
+    },
+    {
+      "id": "rag-system",
+      "title": "Advanced RAG Knowledge System",
+      "description": "Retrieval-Augmented Generation system with vector embeddings and semantic search across enterprise documentation.",
+      "category": "AI/ML",
+      "featured": true,
+      "metrics": {
+        "documents": "100K+",
+        "queryLatency": "<100ms",
+        "accuracy": "94%"
+      },
+      "highlights": [
+        "Vector database with semantic search capabilities",
+        "Multi-model embedding strategies",
+        "Context-aware response generation",
+        "Continuous learning from user interactions"
+      ],
+      "technologies": ["Python", "Pinecone", "OpenAI", "LangChain", "PostgreSQL"],
+      "github": "https://github.com/VinnyVanGogh/rag-system",
+      "status": "production"
+    },
+    {
+      "id": "ai-infrastructure",
+      "title": "AI Development Infrastructure",
+      "description": "Comprehensive AI development platform with model versioning, experiment tracking, and automated deployment pipelines.",
+      "category": "Infrastructure",
+      "featured": true,
+      "metrics": {
+        "models": "50+",
+        "experiments": "500+",
+        "deployments": "Daily"
+      },
+      "highlights": [
+        "Automated model training and evaluation pipelines",
+        "A/B testing framework for model comparison",
+        "Real-time performance monitoring",
+        "Seamless rollback and versioning"
+      ],
+      "technologies": ["MLflow", "Kubernetes", "Docker", "TensorFlow", "PyTorch", "GitLab CI/CD"],
+      "status": "production"
+    },
+    {
+      "id": "ad-manager",
+      "title": "Enterprise AD User Management System",
+      "description": "PowerShell-based Active Directory automation system managing 5000+ users with advanced RBAC and compliance features.",
+      "category": "Enterprise Tools",
+      "featured": true,
+      "metrics": {
+        "users": "5000+",
+        "automationRate": "95%",
+        "complianceScore": "100%"
+      },
+      "highlights": [
+        "Automated user provisioning and deprovisioning",
+        "Complex group policy management",
+        "Compliance reporting and audit trails",
+        "Integration with HR systems"
+      ],
+      "technologies": ["PowerShell", "Active Directory", "Azure AD", "C#", ".NET"],
+      "status": "production"
+    },
+    {
+      "id": "domain-ssl-monitor",
+      "title": "Domain & SSL Certificate Monitoring Suite",
+      "description": "Automated monitoring system for domain expirations and SSL certificates with ConnectWise PSA integration for proactive ticket creation.",
+      "category": "Automation",
+      "featured": false,
+      "metrics": {
+        "domainsMonitored": "500+",
+        "alertLeadTime": "60 days",
+        "automationRate": "100%"
+      },
+      "highlights": [
+        "WHOIS-based domain expiration tracking",
+        "SSL certificate validation and monitoring",
+        "Automated ConnectWise ticket creation",
+        "Multi-tenant configuration management"
+      ],
+      "technologies": ["Python", "ConnectWise API", "WHOIS", "SSL/TLS", "AsyncIO"],
+      "status": "production"
+    },
+    {
+      "id": "conda-env-generator",
+      "title": "Intelligent Conda Environment Generator",
+      "description": "AI-powered tool that analyzes Python projects to automatically generate accurate conda environment files with dependency resolution.",
+      "category": "Developer Tools",
+      "featured": false,
+      "metrics": {
+        "packagesResolved": "1000+",
+        "accuracy": "98%",
+        "timeReduction": "90%"
+      },
+      "highlights": [
+        "Automatic import detection and mapping",
+        "OpenAI-powered package resolution",
+        "Standard library vs third-party detection",
+        "Multi-project batch processing"
+      ],
+      "technologies": ["Python", "OpenAI API", "AST", "Conda", "YAML"],
+      "status": "production"
+    },
+    {
+      "id": "msgraph-migration",
+      "title": "Microsoft Graph Migration Toolkit",
+      "description": "Enterprise-grade Microsoft 365 tenant migration system with comprehensive backup, assessment, and automated migration capabilities.",
+      "category": "Enterprise Tools",
+      "featured": false,
+      "metrics": {
+        "objectsMigrated": "50K+",
+        "tenants": "25+",
+        "successRate": "99.9%"
+      },
+      "highlights": [
+        "Full tenant assessment and reporting",
+        "Exchange Online migration automation",
+        "Azure AD object synchronization",
+        "HTML report generation with migration insights"
+      ],
+      "technologies": ["Python", "Microsoft Graph API", "Azure AD", "PowerShell", "HTML/CSS"],
+      "status": "production"
+    },
+    {
+      "id": "contact-importer",
+      "title": "CSV Contact Import Automation",
+      "description": "Intelligent CSV parser and contact importer with advanced mapping, validation, and bulk import capabilities for CRM systems.",
+      "category": "Automation",
+      "featured": false,
+      "metrics": {
+        "contactsProcessed": "100K+",
+        "mappingAccuracy": "99%",
+        "importSpeed": "5K/min"
+      },
+      "highlights": [
+        "Smart column mapping with AI assistance",
+        "Data validation and cleansing",
+        "Duplicate detection and merging",
+        "Batch processing with error recovery"
+      ],
+      "technologies": ["Python", "Pandas", "CSV", "JSON", "ConnectWise API"],
+      "status": "production"
+    },
+    {
+      "id": "python-class-organizer",
+      "title": "Python Class Organizer",
+      "description": "Development tool that splits monolithic Python scripts into modular classes and combines them back for single-file deployment.",
+      "category": "Developer Tools",
+      "featured": false,
+      "metrics": {
+        "filesProcessed": "500+",
+        "codeOrganized": "100K+ lines",
+        "efficiency": "75%"
+      },
+      "highlights": [
+        "Automatic class extraction and organization",
+        "Import management and dependency tracking",
+        "Single-file compilation for deployment",
+        "Maintains code structure and formatting"
+      ],
+      "technologies": ["Python", "AST", "File I/O", "Module Management"],
+      "status": "production"
+    },
+    {
+      "id": "connectwise-doc-processor",
+      "title": "ConnectWise Document Processor",
+      "description": "Utility bot for processing and transforming ConnectWise documentation with intelligent parsing and structured output generation.",
+      "category": "Automation",
+      "featured": false,
+      "metrics": {
+        "documentsProcessed": "10K+",
+        "parseAccuracy": "96%",
+        "formats": "5+"
+      },
+      "highlights": [
+        "Multi-format document parsing",
+        "Schema-based output generation",
+        "Intelligent content extraction",
+        "Batch processing capabilities"
+      ],
+      "technologies": ["Python", "JSON Schema", "RegEx", "ConnectWise API"],
+      "status": "production"
+    },
+    {
+      "id": "ad-user-mgmt-advanced",
+      "title": "Advanced AD User Manager with Auto-Detection",
+      "description": "Sophisticated Active Directory user management system with smart OU detection and automated configuration discovery.",
+      "category": "Enterprise Tools",
+      "featured": false,
+      "metrics": {
+        "usersManaged": "5000+",
+        "autoDetectionRate": "98%",
+        "operationSpeed": "100/min"
+      },
+      "highlights": [
+        "Smart OU auto-detection and configuration",
+        "Multi-domain controller support",
+        "LDAP and DC server mode flexibility",
+        "Comprehensive error handling and logging"
+      ],
+      "technologies": ["Python", "Active Directory", "LDAP", "PowerShell"],
+      "status": "production"
+    },
+    {
+      "id": "member-location-tracker",
+      "title": "ConnectWise Member Location Tracker",
+      "description": "Retrieves and tracks member location and work role information from ConnectWise time entries with retry logic and API optimization.",
+      "category": "Automation",
+      "featured": false,
+      "metrics": {
+        "apiCalls": "10K+/day",
+        "reliability": "99.8%",
+        "responseTime": "<2s"
+      },
+      "highlights": [
+        "Time entry to member location mapping",
+        "Intelligent retry logic with exponential backoff",
+        "Work role and location correlation",
+        "Comprehensive API response logging"
+      ],
+      "technologies": ["Python", "ConnectWise API", "Tenacity", "HTTP"],
+      "status": "production"
+    },
+    {
+      "id": "text-encoding-analyzer",
+      "title": "Character Encoding & Non-ASCII Detector",
+      "description": "Advanced text encoding detection and non-ASCII character analysis tool for file processing and data validation.",
+      "category": "Developer Tools",
+      "featured": false,
+      "metrics": {
+        "filesAnalyzed": "50K+",
+        "encodingAccuracy": "99.5%",
+        "charactersCovered": "Unicode"
+      },
+      "highlights": [
+        "Intelligent encoding detection with confidence scoring",
+        "Precise non-ASCII character location mapping",
+        "Context-aware character analysis",
+        "Multi-encoding support and validation"
+      ],
+      "technologies": ["Python", "charset-normalizer", "Unicode", "File I/O"],
+      "status": "production"
+    },
+    {
+      "id": "data-extractor",
+      "title": "Intelligent Data Extraction Utility",
+      "description": "High-performance regex-based data extraction tool with numeric value parsing and type conversion capabilities.",
+      "category": "Automation",
+      "featured": false,
+      "metrics": {
+        "extractionSpeed": "50K/s",
+        "patterns": "100+",
+        "accuracy": "99.9%"
+      },
+      "highlights": [
+        "Optimized regex pattern compilation",
+        "Multi-type input handling (string, int, mixed)",
+        "Intelligent numeric value extraction",
+        "Comprehensive logging and error handling"
+      ],
+      "technologies": ["Python", "Regular Expressions", "Data Processing"],
+      "status": "production"
+    },
+    {
+      "id": "api-inspector",
+      "title": "HTTP Client API Inspector",
+      "description": "Development utility for inspecting and analyzing API client structures, methods, and integration patterns.",
+      "category": "Developer Tools",
+      "featured": false,
+      "metrics": {
+        "apisInspected": "200+",
+        "methodsAnalyzed": "5K+",
+        "integrations": "50+"
+      },
+      "highlights": [
+        "Dynamic class and method introspection",
+        "Third-party integration pattern analysis",
+        "Authentication workflow documentation",
+        "API usage pattern validation"
+      ],
+      "technologies": ["Python", "Introspection", "API Design", "Documentation"],
+      "status": "production"
+    }
+  ]
+}

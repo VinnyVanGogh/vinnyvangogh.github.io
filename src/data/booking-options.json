@@ -1,0 +1,53 @@
+{
+  "calendlyPlan": "free",
+  "bookingOptions": [
+    {
+      "id": "general-consultation",
+      "title": "General Consultation",
+      "description": "Discuss your project needs and explore how I can help with AI solutions, automation, or technical leadership.",
+      "duration": "30 minutes",
+      "icon": "MessageCircle",
+      "calendlyUrl": "https://calendly.com/vincevasile-vinny-van-gogh/general-consultation"
+    },
+    {
+      "id": "project-discovery",
+      "title": "Project Discovery Call",
+      "description": "Deep dive into your specific project requirements, timeline, and technical specifications.",
+      "duration": "45 minutes",
+      "icon": "Search",
+      "calendlyUrl": ""
+    },
+    {
+      "id": "technical-interview",
+      "title": "Technical Interview",
+      "description": "For hiring managers looking to assess technical skills, experience, and cultural fit.",
+      "duration": "60 minutes",
+      "icon": "Code2",
+      "calendlyUrl": "https://calendly.com/vincevasile-vinny-van-gogh/technical-interview"
+    },
+    {
+      "id": "freelance-proposal",
+      "title": "Freelance Project Discussion",
+      "description": "Discuss freelance opportunities, scope of work, deliverables, and project timelines.",
+      "duration": "30 minutes",
+      "icon": "Briefcase",
+      "calendlyUrl": ""
+    },
+    {
+      "id": "ai-automation-strategy",
+      "title": "AI & Automation Strategy Session",
+      "description": "Strategic consultation on implementing AI solutions and automation in your organization.",
+      "duration": "45 minutes",
+      "icon": "Brain",
+      "calendlyUrl": ""
+    },
+    {
+      "id": "enterprise-consultation",
+      "title": "Enterprise Solutions Consultation",
+      "description": "For enterprise clients looking to discuss large-scale implementations and architecture decisions.",
+      "duration": "60 minutes",
+      "icon": "Building2",
+      "calendlyUrl": ""
+    }
+  ]
+}
